@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: bac-tools-niger
+    env: node
+    buildCommand: npm install
+    startCommand: node app.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_PHONE
+        sync: false
+      - key: ADMIN_MASTER_KEY
+        sync: false

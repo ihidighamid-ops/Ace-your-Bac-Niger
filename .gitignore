@@ -1,0 +1,6 @@
+node_modules/
+.env
+public/uploads/
+public/recus/
+public/flamme/
+*.log
